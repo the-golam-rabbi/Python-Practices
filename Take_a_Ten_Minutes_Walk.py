@@ -7,3 +7,5 @@ def is_valid_walk(walk):
     else:
         return False
    
+#just realized, I could have just 
+    return ((len(walk) == 10) and walk.count("n") == walk.count("s")) and (walk.count("e") == walk.count("w"))
