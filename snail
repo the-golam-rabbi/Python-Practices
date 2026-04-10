@@ -1,0 +1,8 @@
+def snail(snail_map):
+    res = []
+    while(snail_map):
+        res += (snail_map.pop(0))
+        snail_map = list(map(list, zip(*snail_map)))[::-1]
+    
+    return res
+    
